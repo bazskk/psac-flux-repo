@@ -4,8 +4,6 @@ metadata:
   name: wordpress
   namespace: wordpress
 spec:
-  upgrade:
-    force: true
   interval: 10m
   chart:
     spec:
@@ -19,9 +17,3 @@ spec:
     wordpressUsername: admin
     service:
       type: ClusterIP
-    persistence:
-      storageClass: standard
-    mariadb:
-      primary:
-        persistence:
-          storageClass: standard
