@@ -4,6 +4,8 @@ metadata:
   name: wordpress
   namespace: wordpress
 spec:
+  upgrade:
+    force: true
   interval: 10m
   chart:
     spec:
