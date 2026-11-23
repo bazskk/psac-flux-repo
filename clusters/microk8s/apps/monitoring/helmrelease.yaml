@@ -27,7 +27,7 @@ spec:
           volumeClaimTemplate:
             spec:
               storageClassName: standard
-              accesModes:
+              accessModes:
                 - ReadWriteOnce
               resources:
                 requests:
